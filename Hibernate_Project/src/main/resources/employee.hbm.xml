@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="org.jsp.hib.Employee" table="Employee">
+<id name="id" column="Eid">
+<generator class="identity"/>
+</id>
+<property name="name" column="Ename" not-null="true"></property>
+<property name="phno" column="Phno" unique="true" not-null="true"></property>
+<property name="desg" column="Desg" not-null="true"></property>
+<property name="salary" column="Salary" not-null="true"></property>
+<property name="email" column="Email" unique="true" not-null="true"></property>
+<property name="passowrd" column="Passowrd" not-null="true"></property>
+</class>
+</hibernate-mapping>
+
